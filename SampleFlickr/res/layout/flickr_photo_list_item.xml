@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/frame">
+
+    <ImageView
+        android:id="@+id/flickr_image"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image"/>
+
+    <TextView
+        android:id="@+id/image_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flickr_image"
+        android:layout_alignLeft="@+id/flickr_image"
+        android:drawableLeft="@drawable/ic_image_title"
+        android:gravity="center_vertical"
+        android:text="@string/default_image_title" 
+        android:layout_marginBottom="25dp"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"/>
+
+    <TextView
+        android:id="@+id/comments_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/report_imageview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/likes_textview"
+        android:drawableLeft="@drawable/ic_posts"
+        android:drawablePadding="5dp"
+        android:text="@string/default_image_comments"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/likes_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/comments_textview"
+        android:layout_alignBottom="@+id/comments_textview"
+        android:layout_alignLeft="@+id/flickr_image"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_heart"
+        android:drawablePadding="5dp"
+        android:text="@string/default_image_likes"
+        android:textColor="@color/text_color" />
+
+    <ImageView
+        android:id="@+id/report_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/flickr_image"
+        android:layout_below="@+id/flickr_image"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_report" />
+
+</RelativeLayout>

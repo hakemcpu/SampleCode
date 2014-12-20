@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#cfcfcf</color>
+    <color name="gridview_item_background_color">#fff</color>
+    <color name="text_color">#a6a8ad</color>
+    <color name="action_bar_background_color">#919191</color>
+    <color name="list_background_pressed">#22ffffff</color>
+    
+</resources>

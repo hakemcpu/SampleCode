@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MindCandy</string>
+
+    <string name="connection_problem">There is a problem in the connectivity.</string>
+    <string name="default_image_title">WhatWhatEd</string>
+    <string name="default_image_likes">200</string>
+    <string name="default_image_comments">6</string>
+        
+</resources>
